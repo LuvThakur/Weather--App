@@ -1,38 +1,35 @@
-.App {
-  text-align: center;
+/* App.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Arial', sans-serif; /* Add a fallback font for better compatibility */
+    /* Set a fallback color in case the image fails to load */
+    background-color: #f0f0f0;
+    background-image: url('https://source.unsplash.com/1920x1080/?weather'); /* Set your background image URL */
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Adjust the background color and opacity */
+    border-radius: 10px; /* Add border-radius for a rounded container */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Center the Search component */
+.Search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Adjust as needed */
 }
